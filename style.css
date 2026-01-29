@@ -1,34 +1,100 @@
-body {
+//
+/* Reset */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f0f4ff, #f9fafb);
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background-color: #1e293b;
-    color: navy blue;
-    text-align: center;
-    padding: 40px 0;
-}
-
-section {
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
-}
-
-h2 {
-    color: #1e293b;
-}
-
-ul {
-    list-style-type: square;
-}
-
-footer {
-    background-color: #1e293b;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 60px 20px;
 }
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: 25px;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+/* Section */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+/* Skills */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+#skills li {
+    background: #eef2ff;
+    color: #1e40af;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Projects */
+#projects p {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+#contact p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
